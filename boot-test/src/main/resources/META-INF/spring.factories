@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationListener=\
+  mcc.g3n.boottest.listener.MyApplicationListener
+
+org.springframework.boot.SpringApplicationRunListener=\
+  mcc.g3n.boottest.listener.MySpringApplicationRunListener

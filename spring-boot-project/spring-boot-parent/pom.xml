@@ -3,12 +3,14 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-dependencies</artifactId>
 		<version>${revision}</version>
 		<relativePath>../spring-boot-dependencies</relativePath>
 	</parent>
+
 	<artifactId>spring-boot-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>Spring Boot Parent</name>
@@ -17,6 +19,7 @@
 		<name>Pivotal Software, Inc.</name>
 		<url>https://spring.io</url>
 	</organization>
+
 	<properties>
 		<main.basedir>${basedir}/../..</main.basedir>
 		<disable.checks>false</disable.checks>
@@ -35,15 +38,18 @@
 		<testcontainers.version>1.12.4</testcontainers.version>
 		<testng.version>6.14.3</testng.version>
 	</properties>
+
 	<scm>
 		<url>${git.url}</url>
 		<connection>${git.connection}</connection>
 		<developerConnection>${git.developerConnection}</developerConnection>
 	</scm>
+
 	<issueManagement>
 		<system>Github</system>
 		<url>https://github.com/spring-projects/spring-boot/issues</url>
 	</issueManagement>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- Internal unpublished Spring Boot dependencies -->

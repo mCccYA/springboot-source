@@ -192,7 +192,8 @@ public class SpringApplication {
 		// 5、设置应用上线文初始化器
 		setInitializers((Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class));
 
-		// 6、设置监听器
+		// 6、SpringApplication构造函数从spring.fatories中加载所有的ApplicationListener。
+		
 		setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
 
 		// 7、推断主入口应用类
